@@ -1,0 +1,301 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    background-color: rgb(32, 24, 24);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em 2em;
+    box-shadow: 0px 5px 20px black;
+}
+.logo{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.nav-item{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: ease .3s;
+}
+.nav-item a:hover, .login-button a:hover{
+    color: rgb(190, 42, 42);
+}
+.nav-item li{
+    font-size: 5px;
+}
+.nav-list ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.nav-list-img:nth-child(1){
+    margin-left: -30px;
+
+}
+.nav-list-img:nth-child(3){
+    margin-left: 30px;
+    width: 40px;
+}
+
+
+.login-button button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.068);
+}
+.login-button a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: ease .3s;
+}
+.mobile-menu-icon, .mobile-menu{
+    display: none;
+}
+
+
+.side-menu-img{
+    width: 40px;
+    height: 40px;
+    margin-top: -8px;
+}
+.section{
+    background-color: rgba(32, 24, 24, 0.788);
+    margin-top: 115px;
+    display: grid;
+    grid-template: 45% 1fr / 55% 1fr auto;
+    padding: 1rem 18rem;
+}
+.section-text{
+    font-size: 28px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-top: 10rem;
+    padding: 0;
+}
+.section-img img{
+    width: 40rem;
+}
+.section-buttons{
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background-color: rgba(32, 24, 24, 0.637);
+    padding: 15px 50px;
+}
+
+
+.options{
+    color: black;
+    padding: 10px;
+    margin-left: 58.5%;
+}
+.games-options{
+    display: inline-block;
+    background-color: rgb(32, 24, 24);
+    margin-top: -200px;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.game-1, .game-2{
+    border: 2px solid rgba(255, 255, 255, 0.137);
+}
+.games-options img{
+    width: 40px;
+}
+.game-title{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: white;
+    margin: 5px 0;
+}
+
+
+
+.content{
+    background-color: rgb(32, 24, 24);
+    display: flex;
+    flex-direction: column;
+    margin-top: -5rem;
+
+}
+.content-title{
+    text-align: center;
+    padding-top: 6rem;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+.guide{
+    background-color: rgba(32, 24, 24, 0.952);
+    padding: 4rem;
+}
+.content-btn{
+    border: none;
+    cursor: pointer; 
+    text-align: center;
+}
+.content-btn button{
+    background-color: rgb(29, 20, 20);
+    color: inherit;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px 20px;
+    letter-spacing: 2px;
+}
+.about-btn{
+    cursor: pointer;
+    transition: ease .4s;
+}
+.about-btn:hover{
+    transform: scale(0.9);
+}
+.content-about{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    border-radius: 10px;
+    display: none;
+    word-break: break-all;
+}
+.about-list1, .about-list2{
+    padding: 1rem 18rem;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.link1, .link2{
+    padding: 1rem 16rem;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 68, 255);
+}
+.link1 a, .link2 a{
+    text-decoration: none;
+}
+.about-list1, .about-list2, .link2, .link1{
+    display: none;
+}
+.showing{
+    display: block;
+}
+.footer{
+    background-color: rgb(26, 18, 18);
+    box-shadow: 0px 5px 40px rgb(255, 255, 255);
+}
+.informations{
+    justify-content:space-between;
+    display: flex;
+    padding: 1rem 17rem;
+
+    letter-spacing: 1px;
+    color: #dedede;
+}
+.informations a{
+    text-decoration: none;
+    color: #dedede;
+}
+
+
+
+/* Mobile Version--------------------*/
+
+@media screen and (max-width: 730px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item, .login-button, .nav-list-img{
+        display: none;
+    }
+    .z{
+        display: block;
+        width: 50px;
+    }
+    .centralizer{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 1rem 0;
+    }
+    .nav-list-img:nth-child(1), .nav-list-img:nth-child(3){
+        margin:0;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-item a{
+        text-decoration: none;
+        color: inherit;
+        font-weight: 500;
+        margin: 1em;
+        letter-spacing: 1.5px;
+    }
+    .side-menu-img{
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+    }
+    .mobile-item{
+        padding: .8rem;
+    }
+    .mobile-item li{
+        display: inline-block;
+        height: 10px;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu ul{
+        padding: 0;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+}

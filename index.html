@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Styles-->
+    <link rel="stylesheet" href="/Central-Ferramentas/CSS/style.css">
+    
+    <!--Javascript-->
+    <script src="/Central-Ferramentas/JS/script.js"></script>
+    
+    
+    <title>MixTools</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>MixTools</h1>
+            </div>
+
+        <div class="nav-list">
+            <ul>
+                <img class="nav-list-img" src="/Central-Ferramentas/IMG/calculadora.png">
+                <li class="nav-item"><a href="#">IMC Calculator</li></a>
+
+                <img class="nav-list-img" src="/Central-Ferramentas/IMG/tarefas.png">
+                <li class="nav-item"><a href="#">Tasks Manager</li></a>
+            </ul>
+        </div>
+
+        <div class="login-button">
+            <button><a href="#">About</button></a>
+        </div>
+
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="side-menu-img" src="/Central-Ferramentas/IMG/Menu.png"></button>
+        </div>
+        </nav>
+
+
+
+        <div id="mobile-menu" class="mobile-menu">
+            <ul>
+                <div class="centralizer">
+                    <img class="nav-list-img z" src="/Central-Ferramentas/IMG/calculadora.png">
+                    <li class="mobile-item "><a href="#">IMC Calculator</li></a>
+                </div>
+                
+                <div class="centralizer">
+                    <img class="nav-list-img z" src="/Central-Ferramentas/IMG/tarefas.png">
+                    <li class="mobile-item "><a href="#">Tasks Manager</li></a>
+                </div>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">About</button></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="section-text">
+            <h2>Welcome to MixTools 🌞</h2>
+            <p>Uma ferramenta de <strong>Multi Tarefas</strong> feita pra você</p>
+
+            <div>
+                <a href="#"><input class="section-buttons" type="button" value="Tools"></a>
+                <a href="#"><input class="section-buttons" type="button" value="About"></a>
+            </div>
+        </div>
+
+        <div class="section-img">
+            <img src="/Central-Ferramentas/IMG/multiTaskBlack.png">
+        </div>
+    </section>
+
+    <content class="options">
+        <div class="games-options game-1">
+            <img src="/Central-Ferramentas/IMG/calculadora.png">
+            <p class="game-title">IMC Calculator</p>
+        </div>
+
+        <div class="games-options game-2">
+            <img src="/Central-Ferramentas/IMG/tarefas.png">
+            <p class="game-title">Tasks Manager</p>
+        </div>
+        
+    </content>
+
+    <content class="content">
+        
+        <h1 class="content-title">Sobre</h1>
+        
+        <div class="guide">
+            <article class="content-btn">
+                <button onclick="mostrarTxt1()" id="btn1" class="about-btn">IMC Calculator</button>
+                <button onclick="mostrarTxt2()" id="btn2" class="about-btn">Tasks Manager</button>
+            </p>Clique em uma das opções para visualizar<p>
+            </article>
+
+            <article id="txt1" class="content-about">Texto1</article>
+
+            <ul id="txt-list1" class="about-list1">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+
+            
+            <a id="link1" class="link1" href="#">IMC Calculator⤴</a>
+
+            
+            
+            <article id="txt2" class="content-about">Texto2</article>
+
+            <ul id="txt-list2" class="about-list2">
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+            
+            <a id="link2" class="link2" href="#">Tasks Manager⤴</a>
+        </div>
+    </content>
+
+    <footer class="footer">
+        <!-- <span>Made by Igor Almeida</span> -->
+
+        <div class="informations">
+            <a target="_blank" href="https://www.instagram.com/igor.aalmeida/"><span>Instagram⤴</span></a>
+            <a target="_blank" href="https://github.com/Igoraalmeida"><span>Made By Igor Almeida</span></a>
+            <a target="_blank" href="mailto:igor6Almeida@hotmail.com"><span>E-mail⤴</span></a>
+        </div>
+    </footer>
+</body>
+</html>
