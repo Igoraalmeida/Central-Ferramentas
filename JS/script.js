@@ -55,8 +55,7 @@ function mostrarTxt2(){
    
     txtList2.classList.toggle('showing')
     link2.classList.toggle('showing')
-    txt2.classList.toggle('showing')
-    
+    txt2.classList.toggle('showing') 
     
 
     
