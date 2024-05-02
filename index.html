@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Styles-->
-    <link rel="stylesheet" href="/Central-Ferramentas/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
     
     <!--Javascript-->
-    <script src="/Central-Ferramentas/JS/script.js"></script>
+    <script src="/JS/script.js" defer></script>
     
     
     <title>MixTools</title>
@@ -24,10 +24,10 @@
 
         <div class="nav-list">
             <ul>
-                <img class="nav-list-img" src="/Central-Ferramentas/IMG/calculadora.png">
+                <img class="nav-list-img" src="/IMG/calculadora.png">
                 <li class="nav-item"><a href="#">IMC Calculator</li></a>
 
-                <img class="nav-list-img" src="/Central-Ferramentas/IMG/tarefas.png">
+                <img class="nav-list-img" src="/IMG/tarefas.png">
                 <li class="nav-item"><a href="#">Tasks Manager</li></a>
             </ul>
         </div>
@@ -38,7 +38,7 @@
 
 
         <div class="mobile-menu-icon">
-            <button onclick="menuShow()"><img class="side-menu-img" src="/Central-Ferramentas/IMG/Menu.png"></button>
+            <button onclick="menuShow()"><img class="side-menu-img" src="/IMG/Menu.png"></button>
         </div>
         </nav>
 
@@ -47,12 +47,12 @@
         <div id="mobile-menu" class="mobile-menu">
             <ul>
                 <div class="centralizer">
-                    <img class="nav-list-img z" src="/Central-Ferramentas/IMG/calculadora.png">
+                    <img class="nav-list-img z" src="/IMG/calculadora.png">
                     <li class="mobile-item "><a href="#">IMC Calculator</li></a>
                 </div>
                 
                 <div class="centralizer">
-                    <img class="nav-list-img z" src="/Central-Ferramentas/IMG/tarefas.png">
+                    <img class="nav-list-img z" src="/IMG/tarefas.png">
                     <li class="mobile-item "><a href="#">Tasks Manager</li></a>
                 </div>
             </ul>
@@ -74,20 +74,24 @@
         </div>
 
         <div class="section-img">
-            <img src="/Central-Ferramentas/IMG/multiTaskBlack.png">
+            <img src="/IMG/multiTaskBlack.png">
         </div>
     </section>
 
     <content class="options">
-        <div class="games-options game-1">
-            <img src="/Central-Ferramentas/IMG/calculadora.png">
-            <p class="game-title">IMC Calculator</p>
-        </div>
+        <a href="#btn1">
+            <div class="games-options game-1">
+                <img src="/IMG/calculadora.png">
+                <p class="game-title">IMC Calculator</p>
+            </div>
+        </a>
 
-        <div class="games-options game-2">
-            <img src="/Central-Ferramentas/IMG/tarefas.png">
-            <p class="game-title">Tasks Manager</p>
-        </div>
+        <a href="#btn2">
+            <div class="games-options game-2">
+                <img src="/IMG/tarefas.png">
+                <p class="game-title">Tasks Manager</p>
+            </div>
+        </a>
         
     </content>
 
@@ -97,8 +101,8 @@
         
         <div class="guide">
             <article class="content-btn">
-                <a href="#btn1"><button onclick="mostrarTxt1()" id="btn1" class="about-btn">IMC Calculator</button></a>
-                <a href="#btn1"><button onclick="mostrarTxt2()" id="btn2" class="about-btn">Tasks Manager</button></a>
+                <a href="#btn1"><button id="btn1" class="about-btn">IMC Calculator</button></a>
+                <a href="#btn2"><button id="btn2" class="about-btn">Tasks Manager</button></a>
             </p>Clique em uma das opções para visualizar<p>
             </article>
 
