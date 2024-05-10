@@ -95,7 +95,6 @@ header {
     width: 40px;
     height: 40px;
     margin-top: -8px;
-    border: 1px solid red;
 }
 
 /*------------Banner---------------*/
@@ -489,6 +488,7 @@ header {
     .mobile-menu .login-button {
         display: block;
         padding: 1rem 2rem;
+        box-shadow: 0px 10px 10px 1px black;
     }
 
     .mobile-menu .login-button button {
