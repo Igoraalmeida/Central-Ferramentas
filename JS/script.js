@@ -40,11 +40,11 @@ card2.addEventListener("click", function(){
 
      if (mobileMenu.classList.contains('open')) {
          mobileMenu.classList.remove('open')
-         sideMenuImg.src = "/IMG/menu.png"
+         sideMenuImg.src = "/IMG/Menu.png"
          sideMenuImg.style.cssText += 'color:red';
      } else {
          mobileMenu.classList.add('open')
-         sideMenuImg.src = "/IMG/x.png"
+         sideMenuImg.src = "/IMG/X.png"
      }
  }
 
