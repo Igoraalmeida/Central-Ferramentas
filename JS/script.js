@@ -57,15 +57,16 @@ card2.addEventListener("click", function(){
     
     if(txt1.classList.contains('showing')){
         btnIMC.style.backgroundColor = 'rgba(255, 255, 255, 0.137)';
-        btnIMC.style.transform = "scale(1)"
+        btnIMC.style.padding = "25px 25px"
         btnTask.style.backgroundColor = null
+        btnTask.style.padding = '20px 20px'
 
         txt2.classList.remove('showing')
         txtList2.classList.remove('showing')
         link2.classList.remove('showing')
     } else {
-        btnIMC.style.backgroundColor = 'rgb(29, 20, 20)';
-        btnIMC.style.transform = null 
+        btnIMC.style.backgroundColor = null;
+        btnIMC.style.padding = "20px 20px"
     }
  }
 
@@ -76,15 +77,16 @@ card2.addEventListener("click", function(){
     
     if(txt2.classList.contains('showing')){
         btnTask.style.backgroundColor = 'rgba(255, 255, 255, 0.137)';
-        btnTask.style.transform = "scale(1)"
-        btnIMC.style.backgroundColor = null
+        btnTask.style.padding = "25px 25px"
+        btnIMC.style.backgroundColor = null 
+        btnIMC.style.padding = '20px 20px'      
 
         txt1.classList.remove('showing')
         txtList1.classList.remove('showing')
         link1.classList.remove('showing')
     
     } else {
-        btnTask.style.backgroundColor = 'rgb(29, 20, 20)';
-        btnTask.style.transform = null
+        btnTask.style.backgroundColor = null;
+        btnTask.style.padding = "20px 20px"
     }
  }
